@@ -4,74 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Impactus Digital</title>
+  <title>Awenix Studio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      background-color: #f7f9fc;
-      color: #222;
-      line-height: 1.6;
-    }
-
-    .btn-primary {
-      margin-top: 2rem;
-      padding: 1rem 2.5rem;
-      color: #ffffff;
-      border: none;
-      border-radius: 8px;
-      font-size: 1.1rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: 0.3s;
-      background-color: #0076DC;
-    }
-
-    .btn-primary:hover {
-      background-color: #014988;
-    }
-
-    header {
-      background-color: #0076DC;
-      color: white;
-      padding: 1.5rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    header img {
-      height: 60px;
-    }
-
-    nav {
-      display: flex;
-      gap: 2rem;
-      text-align: right;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
     .menu-toggle {
       display: none;
       cursor: pointer;
@@ -86,6 +23,15 @@
       top: 0;
       left: 0;
       transition: opacity 0.3s ease, transform 0.3s ease;
+      width: 32px;
+      height: 32px;
+    }
+
+    .menu-toggle svg path {
+      stroke: #e1e1e6;
+      /* cor clara para ícones sobre fundo escuro */
+      stroke-width: 2;
+      stroke-linecap: round;
     }
 
     #icon-menu {
@@ -108,10 +54,90 @@
       transform: rotate(0deg);
     }
 
+    /* MENU MOBILE */
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      nav {
+        display: none;
+        flex-direction: column;
+        background-color: #0057e7;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 2rem;
+      }
+
+      nav.active {
+        display: flex;
+      }
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #1e1f29;
+      /* fundo escuro */
+      color: #e1e1e6;
+      /* texto claro */
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #0057e7, #00cfff);
+      color: #e1e1e6;
+      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 4px 20px linear-gradient(90deg, #0057e7, #00cfff);
+    }
+
+    header img {
+      height: 60px;
+      /* filter: brightness(0) invert(1); */
+      /* logo claro se precisar */
+    }
+
+    nav {
+      display: flex;
+      gap: 2rem;
+      text-align: right;
+    }
+
+    nav a {
+      color: #e1e1e6;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #00cfff;
+    }
+
+    .menu-toggle svg path {
+      stroke: #e1e1e6;
+    }
+
     .hero {
       padding: 8rem 2rem;
-      background: linear-gradient(to right, #0076DC, #0076DC);
-      color: white;
+      background: linear-gradient(90deg, #0057e7, #00cfff);
+      color: #e1e1e6;
       text-align: center;
       animation: fadeIn 1.5s ease;
     }
@@ -126,23 +152,45 @@
       font-size: 1.25rem;
       max-width: 700px;
       margin: 0 auto;
+      color: #c4d7ff;
     }
 
     .btn {
       margin-top: 2rem;
       padding: 1rem 2.5rem;
-      background: white;
-      color: #007bff;
+      background: #00cfff;
+      color: #1e1f29;
       border: none;
-      border-radius: 8px;
+      border-radius: 20px;
       font-size: 1.1rem;
       font-weight: 600;
       cursor: pointer;
-      transition: 0.3s;
+      transition: background 0.3s ease;
     }
 
     .btn:hover {
-      background: #bbbbbb;
+      background: #0057e7;
+      color: #e1e1e6;
+    }
+
+    .btn-primary {
+      margin-top: 2rem;
+      padding: 1rem 2.5rem;
+      color: #1e1f29;
+      border: none;
+      border-radius: 20px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      background-color: #00cfff;
+      /* box-shadow: 0 6px 15px rgba(0, 207, 255, 0.5); */
+    }
+
+    .btn-primary:hover {
+      background-color: #0057e7;
+      color: #e1e1e6;
+      box-shadow: 0 6px 20px rgba(0, 87, 231, 0.7);
     }
 
     .section {
@@ -153,14 +201,16 @@
 
     .section h2 {
       font-size: 2.5rem;
-      color: #007bff;
+      color: #ffffff;
       margin-bottom: 2rem;
+      text-shadow: 0 0 10px #00cfffaa;
     }
 
     .section p {
       max-width: 850px;
       margin: 0 auto 3rem;
       font-size: 1.1rem;
+      color: #c4d7ff;
     }
 
     .services {
@@ -170,15 +220,23 @@
     }
 
     .service {
-      background: white;
-      border-radius: 16px;
+      background: #2a2c3b;
+      border-radius: 24px;
       padding: 2.5rem;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-      transition: transform 0.3s ease;
+      box-shadow: 0 0 20px rgba(0, 207, 255, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      color: #e1e1e6;
     }
 
     .service:hover {
       transform: translateY(-10px);
+      box-shadow: 0 0 30px rgba(0, 207, 255, 0.6);
+    }
+
+    .service span.material-icons {
+      font-size: 48px;
+      color: #00cfff;
+      filter: drop-shadow(0 0 4px #00cfff);
     }
 
     .portfolio {
@@ -189,59 +247,81 @@
     }
 
     .portfolio-item {
-      background: white;
-      border-radius: 16px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+      background: #2a2c3b;
+      border-radius: 24px;
       overflow: hidden;
+      box-shadow: 0 0 15px rgba(0, 207, 255, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      color: #e1e1e6;
+    }
+
+    .portfolio-item:hover {
+      transform: translateY(-6px) scale(1.04);
+      box-shadow: 0 0 30px rgba(0, 207, 255, 0.7);
     }
 
     .portfolio-item img {
       width: 100%;
+      height: 300px;
+      object-fit: cover;
       display: block;
+      transition: transform 0.3s ease;
+      border-radius: 24px 24px 0 0;
+    }
+
+    .portfolio-item:hover img {
+      transform: scale(1.05);
+      filter: brightness(1.1);
     }
 
     .portfolio-item h3 {
       padding: 1rem;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
+      text-align: center;
+      color: #c4d7ff;
+      text-shadow: 0 0 5px #00cfffaa;
     }
 
     footer {
-      background: #222;
-      color: white;
+      background: #111218;
+      color: #888ca1;
       text-align: center;
       padding: 2rem 1rem;
       margin-top: 6rem;
+      font-size: 0.9rem;
     }
 
     .whatsapp-btn {
       position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25d366;
-      color: white;
+      bottom: 15px;
+      right: 15px;
+      background-color: #00cfff;
+      color: #1e1f29;
       border: none;
       border-radius: 50%;
-      padding: 20px;
-      align-items: center;
+      padding: 15px;
+      align-items: center !important;
       font-size: 1.5rem;
       cursor: pointer;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      transition: background-color 0.3s;
+      box-shadow: 0 0 15px rgba(0, 207, 255, 0.7);
+      transition: background-color 0.3s, box-shadow 0.3s;
     }
 
     .whatsapp-btn:hover {
-      background-color: #128c7e;
+      background-color: #0057e7;
+      box-shadow: 0 0 25px rgba(0, 87, 231, 0.9);
     }
 
     .logo {
       width: 15%;
+      /* filter: brightness(0) invert(1); */
     }
 
     @media (max-width: 768px) {
       nav {
         display: none;
         flex-direction: column;
-        background-color: #0076DB;
+        background-color: #0057e7;
         position: absolute;
         top: 100%;
         left: 0;
@@ -276,12 +356,7 @@
 
       .hero {
         padding: 0rem 2rem 6rem 2rem !important;
-        background: linear-gradient(to right, #0076DC, #0076DC);
-        color: white;
-        text-align: center;
-        animation: fadeIn 1.5s ease;
       }
-
     }
 
     @keyframes fadeIn {
@@ -310,7 +385,7 @@
 
 <body>
   <header>
-    <img src="logo2.png" alt="Impactus Digital Logo" />
+    <img src="logoinv.png" alt="Awenix Studio Logo" />
     <div class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
       <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 24 24">
         <path d="M4 6h16M4 12h16M4 18h16" stroke="white" stroke-width="2" stroke-linecap="round" />
@@ -328,28 +403,39 @@
     </nav>
   </header>
   <section class="hero" id="home">
-    <img href="#servicos" src="logo2.png " class="logo" alt="Impactus Digital Logo" />
+    <!-- <img href="#servicos" src="logoinv.png " class="logo" alt="Awenix Studio Logo" /> -->
     <h1>Transformando Presenças Digitais</h1>
     <p>Marketing digital, tráfego pago, branding e criação de sites para empresas que querem fazer impacto.</p>
     <a href="#servicos"><button class="btn">Conheça nossas soluções</button></a>
+  </section>
+  <section class="section" id="sobre">
+    <!-- <h2>Sobre a Awenix</h2> -->
+    <img src="logoinv.png" class="logo" alt="Awenix Studio Logo" />
+    <p>Somos uma startup focada em inovação e performance. Ajudamos empresas a crescerem de forma estratégica no
+      ambiente digital com soluções criativas e personalizadas. Nossa equipe é movida por resultados, agilidade e um
+      olhar atento às tendências tecnológicas.</p>
   </section>
   <section class="section" id="servicos">
     <h2>Nossos Serviços</h2>
     <p>Oferecemos soluções completas para potencializar sua marca no ambiente digital.</p>
     <div class="services">
       <div class="service">
+        <span class="material-icons" style="font-size: 48px; color: #ffffff;">campaign</span>
         <h3>Marketing Digital</h3>
         <p>Campanhas completas e estratégias focadas em resultados.</p>
       </div>
       <div class="service">
+        <span class="material-icons" style="font-size: 48px; color: #ffffff;">trending_up</span>
         <h3>Tráfego Pago</h3>
         <p>Google, Meta e mais. Alcance seu público com precisão.</p>
       </div>
       <div class="service">
+        <span class="material-icons" style="font-size: 48px; color: #ffffff;">language</span>
         <h3>Criação de Sites</h3>
         <p>Sites modernos, responsivos e otimizados para conversão.</p>
       </div>
       <div class="service">
+        <span class="material-icons" style="font-size: 48px; color: #ffffff;">brush</span>
         <h3>Branding</h3>
         <p>Construção de marcas com identidade forte e memorável.</p>
       </div>
@@ -359,26 +445,30 @@
     <h2>Nosso Portfólio</h2>
     <p>Alguns trabalhos que destacam nosso compromisso com design, performance e resultados.</p>
     <div class="portfolio">
+      <!-- Projeto 4 Patas -->
       <div class="portfolio-item">
-        <img src="projeto1.jpg" alt="Projeto 1">
-        <h3>Site Institucional - Empresa X</h3>
+        <a href="https://www.behance.net/gallery/214839489/4-Patas-Sistema-para-adocao-responsavel-de-animais"
+          target="_blank">
+          <img src="thumb1.png" alt="4 Patas - Sistema para adoção responsável">
+          <h3>4 Patas - Adoção Responsável</h3>
+        </a>
       </div>
       <div class="portfolio-item">
-        <img src="projeto2.jpg" alt="Projeto 2">
-        <h3>Landing Page - Campanha Y</h3>
+        <a href="https://www.behance.net/gallery/214839489/4-Patas-Sistema-para-adocao-responsavel-de-animais"
+          target="_blank">
+          <img src="thumb1.png" alt="4 Patas - Sistema para adoção responsável">
+          <h3>4 Patas - Adoção Responsável</h3>
+        </a>
       </div>
+      <!-- Comercial Glam Bronze -->
       <div class="portfolio-item">
-        <img src="projeto3.jpg" alt="Projeto 3">
-        <h3>E-commerce - Loja Z</h3>
+        <img src="thumb2.png" alt="Comercial Glam Bronze">
+        <h3>Comercial em produção - Glam Bronze</h3>
       </div>
     </div>
+
   </section>
-  <section class="section" id="sobre">
-    <h2>Sobre a Impactus</h2>
-    <img src="logo.png" class="logo" alt="Impactus Digital Logo" />
-    <p>Somos uma startup focada em inovação e performance. Ajudamos empresas a crescerem de forma estratégica no
-      ambiente digital com soluções criativas e personalizadas. Nossa equipe é movida por resultados, agilidade e um
-      olhar atento às tendências tecnológicas.</p>
+
   </section>
   <!-- Nova seção de contato -->
   <section class="section" id="contato">
@@ -391,12 +481,12 @@
     </a>
   </section>
   <footer>
-    <p>&copy; 2025 Impactus Digital. Todos os direitos reservados.</p>
+    <p>&copy; 2025 Awenix Studio. Todos os direitos reservados.</p>
   </footer>
 
   <button class="whatsapp-btn"
     onclick="window.open('https://wa.me/+5551986582387?text=Ol%C3%A1,%20gostaria%20de%20alavancar%20minha%20empresa%20com%20a%20Impactus%20Digital.', '_blank')">
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M9.99 0C4.53 0 0.0800002 4.45 0.0800002 9.91C0.0800002 11.66 0.54 13.36 1.4 14.86L0 20L5.25 18.62C6.7 19.41 8.33 19.83 9.99 19.83C15.45 19.83 19.9 15.38 19.9 9.92C19.9 7.27 18.87 4.78 17 2.91C15.13 1.03 12.64 0 9.99 0ZM10 1.67C12.2 1.67 14.26 2.53 15.82 4.09C17.37 5.65 18.23 7.72 18.23 9.92C18.23 14.46 14.53 18.15 9.99 18.15C8.51 18.15 7.06 17.76 5.8 17L5.5 16.83L2.38 17.65L3.21 14.61L3.01 14.29C2.19 13 1.75 11.47 1.75 9.91C1.76 5.37 5.45 1.67 10 1.67ZM6.48 5.33C6.32 5.33 6.05 5.39 5.82 5.64C5.6 5.89 4.95 6.5 4.95 7.71C4.95 8.93 5.84 10.1 5.95 10.27C6.09 10.44 7.71 12.94 10.2 14C10.79 14.27 11.25 14.42 11.61 14.53C12.2 14.72 12.74 14.69 13.17 14.63C13.65 14.56 14.63 14.03 14.84 13.45C15.05 12.87 15.05 12.38 14.99 12.27C14.92 12.17 14.76 12.11 14.51 12C14.26 11.86 13.04 11.26 12.82 11.18C12.59 11.1 12.45 11.06 12.26 11.3C12.1 11.55 11.62 12.11 11.48 12.27C11.33 12.44 11.19 12.46 10.95 12.34C10.69 12.21 9.89 11.95 8.95 11.11C8.21 10.45 7.72 9.64 7.57 9.39C7.45 9.15 7.56 9 7.68 8.89C7.79 8.78 7.95 8.6 8.05 8.45C8.18 8.31 8.22 8.2 8.3 8.04C8.38 7.87 8.34 7.73 8.28 7.61C8.22 7.5 7.72 6.26 7.51 5.77C7.31 5.29 7.11 5.35 6.95 5.34C6.81 5.34 6.65 5.33 6.48 5.33Z"
         fill="white" />
