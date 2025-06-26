@@ -1,0 +1,89 @@
+<svg width="350" height="350" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    /* Pulsar dos pontos */
+    .pulse {
+      animation: pulseScale 3s ease-in-out infinite;
+      transform-origin: center;
+    }
+    .pulse-delay-0 { animation-delay: 0s; }
+    .pulse-delay-1 { animation-delay: 0.5s; }
+    .pulse-delay-2 { animation-delay: 1s; }
+    .pulse-delay-3 { animation-delay: 1.5s; }
+    .pulse-delay-4 { animation-delay: 2s; }
+    .pulse-delay-5 { animation-delay: 2.5s; }
+
+    @keyframes pulseScale {
+      0%, 100% { r: 5; opacity: 1; }
+      50% { r: 8; opacity: 0.5; }
+    }
+
+    /* Animação das linhas acendendo em sequência */
+    .line {
+      stroke: #06f6d2;
+      stroke-width: 2;
+      stroke-opacity: 0.5;
+      animation: lineGlow 3s ease-in-out infinite;
+      animation-fill-mode: forwards;
+    }
+    .line.delay-0 { animation-delay: 0s; }
+    .line.delay-1 { animation-delay: 0.5s; }
+    .line.delay-2 { animation-delay: 1s; }
+    .line.delay-3 { animation-delay: 1.5s; }
+    .line.delay-4 { animation-delay: 2s; }
+    .line.delay-5 { animation-delay: 2.5s; }
+    .line.delay-6 { animation-delay: 3s; }
+    .line.delay-7 { animation-delay: 3.5s; }
+    .line.delay-8 { animation-delay: 4s; }
+    .line.delay-9 { animation-delay: 4.5s; }
+
+    @keyframes lineGlow {
+      0%, 100% { stroke-opacity: 0.3; }
+      50% { stroke-opacity: 1; }
+    }
+
+    /* Partículas pequenas que se movem */
+    .particle {
+      fill: #06f6d2;
+      fill-opacity: 0.3;
+      animation: particleMove 6s linear infinite alternate;
+    }
+    .particle.delay-0 { animation-delay: 0s; }
+    .particle.delay-1 { animation-delay: 2s; }
+    .particle.delay-2 { animation-delay: 4s; }
+
+    @keyframes particleMove {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(6px, -6px); }
+    }
+  </style>
+
+  <!-- Fundo transparente -->
+  <rect width="350" height="350" fill="transparent" />
+
+  <!-- Linhas com delays para animação sequencial -->
+  <line class="line delay-0" x1="40" y1="40" x2="140" y2="90" />
+  <line class="line delay-1" x1="140" y1="90" x2="260" y2="70" />
+  <line class="line delay-2" x1="260" y1="70" x2="280" y2="180" />
+  <line class="line delay-3" x1="280" y1="180" x2="210" y2="190" />
+  <line class="line delay-4" x1="210" y1="190" x2="90" y2="210" />
+  <line class="line delay-5" x1="90" y1="210" x2="40" y2="40" />
+  <line class="line delay-6" x1="140" y1="90" x2="180" y2="260" />
+  <line class="line delay-7" x1="180" y1="260" x2="260" y2="200" />
+  <line class="line delay-8" x1="260" y1="200" x2="210" y2="190" />
+  <line class="line delay-9" x1="140" y1="90" x2="90" y2="210" />
+
+  <!-- Pontos principais pulsando com delays -->
+  <circle class="pulse pulse-delay-0" cx="40" cy="40" r="5" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-1" cx="140" cy="90" r="5" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-2" cx="260" cy="70" r="5" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-3" cx="280" cy="180" r="5" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-4" cx="210" cy="190" r="5" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-5" cx="90" cy="210" r="5" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-0" cx="180" cy="260" r="5" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-1" cx="260" cy="200" r="5" fill="#06f6d2" />
+  
+  <!-- Partículas menores se movendo -->
+  <circle class="particle delay-0" cx="110" cy="50" r="2" />
+  <circle class="particle delay-1" cx="230" cy="120" r="2" />
+  <circle class="particle delay-2" cx="180" cy="170" r="2" />
+</svg>

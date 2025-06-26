@@ -1,0 +1,171 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    /* Pulsar dos pontos */
+    .pulse {
+      animation: pulseScale 3.5s ease-in-out infinite;
+      transform-origin: center;
+    }
+    .pulse-delay-0 { animation-delay: 0s; }
+    .pulse-delay-1 { animation-delay: 0.3s; }
+    .pulse-delay-2 { animation-delay: 0.6s; }
+    .pulse-delay-3 { animation-delay: 0.9s; }
+    .pulse-delay-4 { animation-delay: 1.2s; }
+    .pulse-delay-5 { animation-delay: 1.5s; }
+    .pulse-delay-6 { animation-delay: 1.8s; }
+    .pulse-delay-7 { animation-delay: 2.1s; }
+    .pulse-delay-8 { animation-delay: 2.4s; }
+    .pulse-delay-9 { animation-delay: 2.7s; }
+    .pulse-delay-10 { animation-delay: 3s; }
+    .pulse-delay-11 { animation-delay: 3.3s; }
+    .pulse-delay-12 { animation-delay: 3.6s; }
+    .pulse-delay-13 { animation-delay: 3.9s; }
+    .pulse-delay-14 { animation-delay: 4.2s; }
+    .pulse-delay-15 { animation-delay: 4.5s; }
+    .pulse-delay-16 { animation-delay: 4.8s; }
+    .pulse-delay-17 { animation-delay: 5.1s; }
+    .pulse-delay-18 { animation-delay: 5.4s; }
+    .pulse-delay-19 { animation-delay: 5.7s; }
+    .pulse-delay-20 { animation-delay: 6s; }
+    .pulse-delay-21 { animation-delay: 6.3s; }
+    .pulse-delay-22 { animation-delay: 6.6s; }
+    .pulse-delay-23 { animation-delay: 6.9s; }
+    .pulse-delay-24 { animation-delay: 7.2s; }
+
+    @keyframes pulseScale {
+      0%, 100% { r: 4; opacity: 1; }
+      50% { r: 7; opacity: 0.5; }
+    }
+
+    /* Animação das linhas acendendo em sequência */
+    .line {
+      stroke: #06f6d2;
+      stroke-width: 1.5;
+      stroke-opacity: 0.4;
+      animation: lineGlow 4s ease-in-out infinite;
+      animation-fill-mode: forwards;
+    }
+
+    /* Para variar delay das linhas e criar sequência */
+    .line.delay-0 { animation-delay: 0s; }
+    .line.delay-1 { animation-delay: 0.3s; }
+    .line.delay-2 { animation-delay: 0.6s; }
+    .line.delay-3 { animation-delay: 0.9s; }
+    .line.delay-4 { animation-delay: 1.2s; }
+    .line.delay-5 { animation-delay: 1.5s; }
+    .line.delay-6 { animation-delay: 1.8s; }
+    .line.delay-7 { animation-delay: 2.1s; }
+    .line.delay-8 { animation-delay: 2.4s; }
+    .line.delay-9 { animation-delay: 2.7s; }
+    .line.delay-10 { animation-delay: 3s; }
+    .line.delay-11 { animation-delay: 3.3s; }
+    .line.delay-12 { animation-delay: 3.6s; }
+    .line.delay-13 { animation-delay: 3.9s; }
+    .line.delay-14 { animation-delay: 4.2s; }
+    .line.delay-15 { animation-delay: 4.5s; }
+    .line.delay-16 { animation-delay: 4.8s; }
+    .line.delay-17 { animation-delay: 5.1s; }
+    .line.delay-18 { animation-delay: 5.4s; }
+    .line.delay-19 { animation-delay: 5.7s; }
+    .line.delay-20 { animation-delay: 6s; }
+    .line.delay-21 { animation-delay: 6.3s; }
+    .line.delay-22 { animation-delay: 6.6s; }
+    .line.delay-23 { animation-delay: 6.9s; }
+    .line.delay-24 { animation-delay: 7.2s; }
+    .line.delay-25 { animation-delay: 7.5s; }
+    .line.delay-26 { animation-delay: 7.8s; }
+    .line.delay-27 { animation-delay: 8.1s; }
+    .line.delay-28 { animation-delay: 8.4s; }
+    .line.delay-29 { animation-delay: 8.7s; }
+
+    @keyframes lineGlow {
+      0%, 100% { stroke-opacity: 0.3; }
+      50% { stroke-opacity: 1; }
+    }
+
+    /* Partículas pequenas que se movem */
+    .particle {
+      fill: #06f6d2;
+      fill-opacity: 0.25;
+      animation: particleMove 7s linear infinite alternate;
+      transform-origin: center;
+    }
+    .particle.delay-0 { animation-delay: 0s; }
+    .particle.delay-1 { animation-delay: 2.5s; }
+    .particle.delay-2 { animation-delay: 5s; }
+    .particle.delay-3 { animation-delay: 7.5s; }
+    .particle.delay-4 { animation-delay: 10s; }
+
+    @keyframes particleMove {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(7px, -7px); }
+    }
+  </style>
+
+  <rect width="400" height="400" fill="transparent" />
+
+  <!-- Linhas -->
+  <line class="line delay-0" x1="30" y1="30" x2="100" y2="90" />
+  <line class="line delay-1" x1="30" y1="30" x2="50" y2="180" />
+  <line class="line delay-2" x1="50" y1="180" x2="130" y2="160" />
+  <line class="line delay-3" x1="100" y1="90" x2="130" y2="160" />
+  <line class="line delay-4" x1="100" y1="90" x2="180" y2="50" />
+  <line class="line delay-5" x1="130" y1="160" x2="180" y2="50" />
+  <line class="line delay-6" x1="50" y1="180" x2="180" y2="250" />
+  <line class="line delay-7" x1="180" y1="250" x2="270" y2="230" />
+  <line class="line delay-8" x1="270" y1="230" x2="320" y2="130" />
+  <line class="line delay-9" x1="320" y1="130" x2="180" y2="50" />
+  <line class="line delay-10" x1="270" y1="230" x2="320" y2="300" />
+  <line class="line delay-11" x1="320" y1="300" x2="250" y2="350" />
+  <line class="line delay-12" x1="250" y1="350" x2="180" y2="250" />
+  <line class="line delay-13" x1="180" y1="250" x2="150" y2="320" />
+  <line class="line delay-14" x1="150" y1="320" x2="100" y2="300" />
+  <line class="line delay-15" x1="100" y1="300" x2="50" y2="180" />
+  <line class="line delay-16" x1="320" y1="130" x2="350" y2="80" />
+  <line class="line delay-17" x1="350" y1="80" x2="280" y2="40" />
+  <line class="line delay-18" x1="280" y1="40" x2="180" y2="50" />
+  <line class="line delay-19" x1="180" y1="50" x2="100" y2="90" />
+  <line class="line delay-20" x1="280" y1="40" x2="250" y2="120" />
+  <line class="line delay-21" x1="250" y1="120" x2="270" y2="230" />
+  <line class="line delay-22" x1="150" y1="320" x2="180" y2="250" />
+  <line class="line delay-23" x1="100" y1="300" x2="180" y2="250" />
+  <line class="line delay-24" x1="150" y1="320" x2="100" y2="90" />
+  <line class="line delay-25" x1="50" y1="180" x2="80" y2="120" />
+  <line class="line delay-26" x1="80" y1="120" x2="180" y2="50" />
+  <line class="line delay-27" x1="320" y1="130" x2="350" y2="200" />
+  <line class="line delay-28" x1="350" y1="200" x2="280" y2="250" />
+  <line class="line delay-29" x1="280" y1="250" x2="180" y2="250" />
+
+  <!-- Pontos pulsando -->
+  <circle class="pulse pulse-delay-0" cx="30" cy="30" r="4" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-1" cx="50" cy="180" r="4" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-2" cx="80" cy="120" r="4" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-3" cx="100" cy="90" r="4" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-4" cx="130" cy="160" r="4" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-5" cx="150" cy="320" r="4" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-6" cx="180" cy="50" r="4" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-7" cx="180" cy="250" r="4" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-8" cx="250" cy="120" r="4" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-9" cx="270" cy="230" r="4" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-10" cx="280" cy="40" r="4" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-11" cx="320" cy="130" r="4" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-12" cx="320" cy="300" r="4" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-13" cx="350" cy="80" r="4" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-14" cx="350" cy="200" r="4" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-15" cx="100" cy="300" r="4" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-16" cx="180" cy="250" r="4" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-17" cx="210" cy="190" r="4" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-18" cx="270" cy="230" r="4" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-19" cx="250" cy="350" r="4" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-20" cx="180" cy="260" r="4" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-21" cx="140" cy="90" r="4" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-22" cx="210" cy="190" r="4" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-23" cx="280" cy="250" r="4" fill="#06f6d2" />
+  <circle class="pulse pulse-delay-24" cx="90" cy="210" r="4" fill="#06f6d2" />
+
+  <!-- Partículas menores em movimento -->
+  <circle class="particle delay-0" cx="60" cy="60" r="2" />
+  <circle class="particle delay-1" cx="190" cy="100" r="2" />
+  <circle class="particle delay-2" cx="240" cy="150" r="2" />
+  <circle class="particle delay-3" cx="300" cy="200" r="2" />
+  <circle class="particle delay-4" cx="100" cy="250" r="2" />
+</svg>
