@@ -46,7 +46,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #00cfff;
+  color: #06f6d2;
 }
 
 /* MENU MOBILE */
@@ -194,7 +194,7 @@ nav a:hover {
 }
 
 .btn-primary:hover {
-  background: #00d8b3;
+  background: #006454;
 }
 
 .btn-secondary {
@@ -254,7 +254,7 @@ nav a:hover {
 .section h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #00cfff;
+  color: #06f6d2;
 }
 
 .section p {
@@ -332,7 +332,7 @@ nav a:hover {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #00cfff;
+  background: #06f6d2;
   border: none;
   border-radius: 50%;
   width: 60px;
