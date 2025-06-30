@@ -64,6 +64,16 @@
   <link rel="manifest" href="site.webmanifest">
 
 </head>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    if (window.innerWidth < 769) {
+      const teia = document.querySelector('.teia-canvas');
+      const graphic = document.querySelector('.hero-graphic');
+      if (teia) teia.style.display = 'none';
+      if (graphic) graphic.style.display = 'none';
+    }
+  });
+</script>
 
 <body>
   <header>
