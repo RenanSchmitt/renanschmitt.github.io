@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://awenix.com.br/sitemap.xml
