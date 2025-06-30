@@ -132,7 +132,7 @@ nav a:hover {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 7rem 10rem; 
+  padding: 7rem 10rem;
   gap: 2rem;
   background: linear-gradient(145deg, #022229, #101010);
 }
@@ -217,7 +217,7 @@ nav a:hover {
   max-width: 100%;
   height: auto;
   filter: drop-shadow(0 0 10px #06f6d280);
-  
+
 }
 
 @media (max-width: 768px) {
@@ -242,6 +242,10 @@ nav a:hover {
 
   .hero-graphic {
     margin-top: 2rem;
+  }
+
+  .logo {
+    width: 240px !important;
   }
 }
 
