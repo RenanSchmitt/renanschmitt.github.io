@@ -5,15 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Awenix Studio | Marketing Digital, Tráfego Pago e Criação de Sites</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="canonical" href="https://www.awenix.com.br/">
-
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" as="style"
-    onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  </noscript>
+  <link rel="preload" href="./fonts/Inter-VariableFont_opsz,wght.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="./fonts/Inter-Italic-VariableFont_opsz,wght.ttf" as="font" type="font/ttf" crossorigin>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="./style.css" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript>
@@ -64,20 +58,10 @@
   <link rel="manifest" href="site.webmanifest">
 
 </head>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    if (window.innerWidth < 769) {
-      const teia = document.querySelector('.teia-canvas');
-      const graphic = document.querySelector('.hero-graphic');
-      if (teia) teia.style.display = 'none';
-      if (graphic) graphic.style.display = 'none';
-    }
-  });
-</script>
 
 <body>
   <header>
-    <img src="./images/header.png" alt="Awenix Studio Logo" />
+    <img src="./images/header.webp" alt="Awenix Studio Logo" />
     <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
       <!-- <div class="menu-toggle" id="menu-toggle" role="button" tabindex="0" aria-label="Abrir menu" aria-expanded="false"> -->
       <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 24 24">
@@ -115,7 +99,7 @@
       </div>
     </section>
     <section class="section" id="sobre">
-      <h2><img src="./images/logoinv.png" class="logo" alt="Awenix Studio Logo" width="500" height="500" loading="lazy"
+      <h2><img src="./images/h2.webp" class="logo" alt="Awenix Studio Logo" width="500" height="500" loading="lazy"
           decoding="async">
       </h2>
       <p>Somos uma startup focada em inovação e performance. Ajudamos empresas a crescerem de forma estratégica no
@@ -155,20 +139,20 @@
         <div class="portfolio-item">
           <a href="https://www.behance.net/gallery/214839489/4-Patas-Sistema-para-adocao-responsavel-de-animais"
             target="_blank">
-            <img src="./images/thumb1.png" alt="4 Patas - Sistema para adoção responsável">
+            <img src="./images/thumb1.webp" alt="4 Patas - Sistema para adoção responsável">
             <h3>Plataforma 4 Patas - Adoção Responsável</h3>
           </a>
         </div>
         <div class="portfolio-item">
           <a href="https://www.behance.net/gallery/229009649/Glam-Bronze-Identidade-Visual-e-Campanha-Comercial"
             target="_blank">
-            <img src="./images/glam.png" alt="4 Patas - Sistema para adoção responsável">
+            <img src="./images/glam.webp" alt="4 Patas - Sistema para adoção responsável">
             <h3>Comercial em produção - Glam Bronze</h3>
           </a>
         </div>
         <div class="portfolio-item">
           <a href="https://rfrefrigeracaosc.github.io/" target="_blank">
-            <img src="./images/rf.png" alt="4 Patas - Sistema para adoção responsável">
+            <img src="./images/rf.webp" alt="4 Patas - Sistema para adoção responsável">
             <h3>Landing Page R.F Refrigeração Comercial</h3>
           </a>
         </div>
@@ -179,19 +163,19 @@
       <div class="services" style="gap: 2rem; align-items: center;">
         <div class="card clientes-card">
           <div style="text-align: center;">
-            <img src="./images/glam.png" alt="Cliente Glam Bronze" class="clientes-logo">
+            <img src="./images/glam.webp" alt="Cliente Glam Bronze" class="clientes-logo">
             <p style="margin-top: 0.5rem; color: #ccc; font-size: 0.9rem;">Glam Bronze</p>
           </div>
         </div>
         <div class="card clientes-card">
           <div style="text-align: center;">
-            <img src="./images/rf.png" alt="Cliente RF Refrigeração" class="clientes-logo">
+            <img src="./images/rf.webp" alt="Cliente RF Refrigeração" class="clientes-logo">
             <p style="margin-top: 0.5rem; color: #ccc; font-size: 0.9rem;">RF Refrigeração</p>
           </div>
         </div>
         <div class="card clientes-card">
           <div style="text-align: center;">
-            <img src="./images/bichomania.png" alt="Cliente BichoMania" class="clientes-logo">
+            <img src="./images/bichomania.webp" alt="Cliente BichoMania" class="clientes-logo">
             <p style="margin-top: 0.5rem; color: #ccc; font-size: 0.9rem;">BichoMania</p>
           </div>
         </div>

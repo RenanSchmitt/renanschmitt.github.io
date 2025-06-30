@@ -1,4 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
 
 /* Reset básico e fontes */
 * {
@@ -265,10 +279,10 @@ nav a:hover {
     height: auto;
   }
 
-  /* .hero-graphic,
+  .hero-graphic,
   .teia-canvas {
     display: none;
-  } */
+  }
 
 }
 
