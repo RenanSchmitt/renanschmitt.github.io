@@ -6,161 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Awenix Studio | Marketing Digital, Tráfego Pago e Criação de Sites</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="canonical" href="https://www.awenix.com.br/">
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" as="style"
     onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   </noscript>
-
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="./style.css" rel="stylesheet" media="print" onload="this.media='all'">
-  <style>
-    /* CSS crítico inline para melhorar LCP e FCP */
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-
-    body {
-      background-color: #0f0f10;
-      color: #f0f0f5;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #0f0f10;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1.5rem 2rem;
-      border-bottom: 1px solid #222;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    header img {
-      height: 48px;
-    }
-
-    nav {
-      display: flex;
-      gap: 1.5rem;
-    }
-
-    nav a {
-      color: #f0f0f5;
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    .hero-tech {
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      padding: 7rem 10rem;
-      gap: 2rem;
-      background: linear-gradient(145deg, #022229, #101010);
-    }
-
-    .hero-content h1 {
-      font-size: 2.8rem;
-      font-weight: 800;
-      line-height: 1.2;
-      color: #fff;
-    }
-
-    .hero-content .highlight {
-      color: #06f6d2;
-    }
-
-    .hero-content p {
-      margin-top: 1rem;
-      font-size: 1.1rem;
-      color: #ccc;
-      max-width: 480px;
-    }
-
-    .hero-buttons {
-      margin-top: 2rem;
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .btn-primary {
-      background: #06f6d2;
-      color: #000;
-      padding: 0.8rem 1.5rem;
-      border-radius: 8px;
-      font-weight: 600;
-    }
-
-    .btn-secondary {
-      border: 1px solid #06f6d2;
-      color: #06f6d2;
-      padding: 0.8rem 1.5rem;
-      border-radius: 8px;
-      font-weight: 600;
-    }
-
-    .hero-graphic img {
-      max-width: 100%;
-      height: auto;
-      filter: drop-shadow(0 0 10px #06f6d280);
-    }
-
-    @media (max-width: 768px) {
-      nav {
-        display: none;
-        flex-direction: column;
-        background-color: #0f0f10;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 2rem;
-      }
-
-      header img {
-        height: 50px;
-      }
-
-      .hero-tech {
-        flex-direction: column;
-        padding: 4rem 1.5rem;
-        text-align: center;
-      }
-
-      .hero-content h1 {
-        font-size: 2rem;
-      }
-
-      .hero-content p {
-        font-size: 1rem;
-      }
-
-      .hero-buttons {
-        flex-direction: column;
-        gap: 0.75rem;
-      }
-    }
-  </style>
   <noscript>
     <link href="./style.css" rel="stylesheet">
   </noscript>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Awenix Studio",
+      "url": "https://www.awenix.com.br",
+      "logo": "https://www.awenix.com.br/images/logoinv.png",
+      "description": "Marketing digital, tráfego pago, branding e criação de sites.",
+      "sameAs": [
+        "https://www.instagram.com/awenixstudio",
+        "https://www.linkedin.com/company/awenix"
+      ]
+    }
+    </script>
   <meta name="description"
     content="Awenix Studio - Marketing digital, tráfego pago, branding e criação de sites para empresas que querem fazer impacto. Soluções criativas, inovadoras e focadas em resultados." />
   <meta name="author" content="Awenix Studio" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://awenix.com.br/">
   <!-- Open Graph / Facebook -->
   <meta property="og:title" content="Awenix Studio - Transformando Presenças Digitais" />
   <meta property="og:description"
@@ -211,122 +87,123 @@
       <a href="#contato">Contato</a>
     </nav>
   </header>
-
-  <!-- HERO -->
-  <section class="hero-tech" id="home">
-    <canvas class="teia-canvas"></canvas>
-    <div class="hero-content">
-      <h1><span class="highlight">Awenix Studio</span><br> Inovação que acelera resultados.</h1>
-      <p>Impulsionamos marcas com tecnologia, design e estratégias digitais de alta performance.</p>
-      <div class="hero-buttons">
-        <a href="#servicos" class="btn-primary">Ver soluções</a>
-        <a href="#portfolio" class="btn-secondary">Ver portfólio</a>
-      </div>
-    </div>
-
-    <div class="hero-graphic">
-      <img src="./images/pc.svg" alt="Tecnologia e design" />
-    </div>
-  </section>
-  <section class="section" id="sobre">
-    <h2><img src="./images/logoinv.png" class="logo" alt="Awenix Studio Logo" width="500" height="500" loading="lazy"
-        decoding="async">
-    </h2>
-    <p>Somos uma startup focada em inovação e performance. Ajudamos empresas a crescerem de forma estratégica no
-      ambiente digital com soluções criativas e personalizadas. Nossa equipe é movida por resultados, agilidade e um
-      olhar atento às tendências tecnológicas.</p>
-  </section>
-  <section class="section" id="servicos">
-    <h2>Nossos Serviços</h2>
-    <div class="services">
-      <article class="service" tabindex="0">
-        <span class="material-icons" aria-hidden="true">campaign</span>
-        <h3>Marketing Digital</h3>
-        <p>Campanhas completas e estratégias focadas em resultados.</p>
-      </article>
-      <article class="service" tabindex="0">
-        <span class="material-icons" aria-hidden="true">trending_up</span>
-        <h3>Tráfego Pago</h3>
-        <p>Google, Meta e mais. Alcance seu público com precisão.</p>
-      </article>
-      <article class="service" tabindex="0">
-        <span class="material-icons" aria-hidden="true">language</span>
-        <h3>Criação de Sites</h3>
-        <p>Sites modernos, responsivos e otimizados para conversão.</p>
-      </article>
-      <article class="service" tabindex="0">
-        <span class="material-icons" aria-hidden="true">branding_watermark</span>
-        <h3>Branding</h3>
-        <p>Construção e fortalecimento de marcas que inspiram confiança.</p>
-      </article>
-    </div>
-  </section>
-  <section class="section" id="portfolio">
-    <h2>Nosso Portfólio</h2>
-    <p>Alguns trabalhos que destacam nosso compromisso com design, performance e resultados.</p>
-    <div class="portfolio">
-      <!-- Projeto 4 Patas -->
-      <div class="portfolio-item">
-        <a href="https://www.behance.net/gallery/214839489/4-Patas-Sistema-para-adocao-responsavel-de-animais"
-          target="_blank">
-          <img src="./images/thumb1.png" alt="4 Patas - Sistema para adoção responsável">
-          <h3>Plataforma 4 Patas - Adoção Responsável</h3>
-        </a>
-      </div>
-      <div class="portfolio-item">
-        <a href="https://www.behance.net/gallery/229009649/Glam-Bronze-Identidade-Visual-e-Campanha-Comercial"
-          target="_blank">
-          <img src="./images/glam.png" alt="4 Patas - Sistema para adoção responsável">
-          <h3>Comercial em produção - Glam Bronze</h3>
-        </a>
-      </div>
-      <div class="portfolio-item">
-        <a href="https://rfrefrigeracaosc.github.io/" target="_blank">
-          <img src="./images/rf.png" alt="4 Patas - Sistema para adoção responsável">
-          <h3>Landing Page R.F Refrigeração Comercial</h3>
-        </a>
-      </div>
-  </section>
-  <section class="section" id="clientes">
-    <h2>Clientes que confiam</h2>
-    <p>Parcerias que geram resultados reais e duradouros.</p>
-    <div class="services" style="gap: 2rem; align-items: center;">
-      <div class="card clientes-card">
-        <div style="text-align: center;">
-          <img src="./images/glam.png" alt="Cliente Glam Bronze" class="clientes-logo">
-          <p style="margin-top: 0.5rem; color: #ccc; font-size: 0.9rem;">Glam Bronze</p>
+  <main>
+    <!-- HERO -->
+    <section class="hero-tech" id="home">
+      <canvas class="teia-canvas"></canvas>
+      <div class="hero-content">
+        <h1><span class="highlight">Awenix Studio</span><br> Inovação que acelera resultados.</h1>
+        <p>Impulsionamos marcas com tecnologia, design e estratégias digitais de alta performance.</p>
+        <div class="hero-buttons">
+          <a href="#servicos" class="btn-primary">Ver soluções</a>
+          <a href="#portfolio" class="btn-secondary">Ver portfólio</a>
         </div>
       </div>
-      <div class="card clientes-card">
-        <div style="text-align: center;">
-          <img src="./images/rf.png" alt="Cliente RF Refrigeração" class="clientes-logo">
-          <p style="margin-top: 0.5rem; color: #ccc; font-size: 0.9rem;">RF Refrigeração</p>
-        </div>
-      </div>
-      <div class="card clientes-card">
-        <div style="text-align: center;">
-          <img src="./images/bichomania.png" alt="Cliente BichoMania" class="clientes-logo">
-          <p style="margin-top: 0.5rem; color: #ccc; font-size: 0.9rem;">BichoMania</p>
-        </div>
-      </div>
-  </section>
 
-  </section>
-  <!-- Nova seção de contato -->
-  <section class="section" id="contato">
-    <h2>Alavanque suas vendas agora mesmo</h2>
-    <p>Entre em contato conosco e descubra como podemos ajudar a sua empresa a alcançar resultados extraordinários no
-      mundo digital.</p>
-    <a href="https://wa.me/+5551986582387?text=Olá,%20gostaria%20de%20alavancar%20minha%20empresa%20com%20a%20Awenix%20Studio."
-      target="_blank">
-      <button class="btn-primary">Fale com um de nossos especialistas</button>
-    </a>
-  </section>
-  <footer>
+      <div class="hero-graphic">
+        <img src="./images/pc.svg" alt="Tecnologia e design" />
+      </div>
+    </section>
+    <section class="section" id="sobre">
+      <h2><img src="./images/logoinv.png" class="logo" alt="Awenix Studio Logo" width="500" height="500" loading="lazy"
+          decoding="async">
+      </h2>
+      <p>Somos uma startup focada em inovação e performance. Ajudamos empresas a crescerem de forma estratégica no
+        ambiente digital com soluções criativas e personalizadas. Nossa equipe é movida por resultados, agilidade e um
+        olhar atento às tendências tecnológicas.</p>
+    </section>
+    <section class="section" id="servicos">
+      <h2>Nossos Serviços</h2>
+      <div class="services">
+        <article class="service" tabindex="0">
+          <span class="material-icons" aria-hidden="true">campaign</span>
+          <h3>Marketing Digital</h3>
+          <p>Campanhas completas e estratégias focadas em resultados.</p>
+        </article>
+        <article class="service" tabindex="0">
+          <span class="material-icons" aria-hidden="true">trending_up</span>
+          <h3>Tráfego Pago</h3>
+          <p>Google, Meta e mais. Alcance seu público com precisão.</p>
+        </article>
+        <article class="service" tabindex="0">
+          <span class="material-icons" aria-hidden="true">language</span>
+          <h3>Criação de Sites</h3>
+          <p>Sites modernos, responsivos e otimizados para conversão.</p>
+        </article>
+        <article class="service" tabindex="0">
+          <span class="material-icons" aria-hidden="true">branding_watermark</span>
+          <h3>Branding</h3>
+          <p>Construção e fortalecimento de marcas que inspiram confiança.</p>
+        </article>
+      </div>
+    </section>
+    <section class="section" id="portfolio">
+      <h2>Nosso Portfólio</h2>
+      <p>Alguns trabalhos que destacam nosso compromisso com design, performance e resultados.</p>
+      <div class="portfolio">
+        <!-- Projeto 4 Patas -->
+        <div class="portfolio-item">
+          <a href="https://www.behance.net/gallery/214839489/4-Patas-Sistema-para-adocao-responsavel-de-animais"
+            target="_blank">
+            <img src="./images/thumb1.png" alt="4 Patas - Sistema para adoção responsável">
+            <h3>Plataforma 4 Patas - Adoção Responsável</h3>
+          </a>
+        </div>
+        <div class="portfolio-item">
+          <a href="https://www.behance.net/gallery/229009649/Glam-Bronze-Identidade-Visual-e-Campanha-Comercial"
+            target="_blank">
+            <img src="./images/glam.png" alt="4 Patas - Sistema para adoção responsável">
+            <h3>Comercial em produção - Glam Bronze</h3>
+          </a>
+        </div>
+        <div class="portfolio-item">
+          <a href="https://rfrefrigeracaosc.github.io/" target="_blank">
+            <img src="./images/rf.png" alt="4 Patas - Sistema para adoção responsável">
+            <h3>Landing Page R.F Refrigeração Comercial</h3>
+          </a>
+        </div>
+    </section>
+    <section class="section" id="clientes">
+      <h2>Clientes que confiam</h2>
+      <p>Parcerias que geram resultados reais e duradouros.</p>
+      <div class="services" style="gap: 2rem; align-items: center;">
+        <div class="card clientes-card">
+          <div style="text-align: center;">
+            <img src="./images/glam.png" alt="Cliente Glam Bronze" class="clientes-logo">
+            <p style="margin-top: 0.5rem; color: #ccc; font-size: 0.9rem;">Glam Bronze</p>
+          </div>
+        </div>
+        <div class="card clientes-card">
+          <div style="text-align: center;">
+            <img src="./images/rf.png" alt="Cliente RF Refrigeração" class="clientes-logo">
+            <p style="margin-top: 0.5rem; color: #ccc; font-size: 0.9rem;">RF Refrigeração</p>
+          </div>
+        </div>
+        <div class="card clientes-card">
+          <div style="text-align: center;">
+            <img src="./images/bichomania.png" alt="Cliente BichoMania" class="clientes-logo">
+            <p style="margin-top: 0.5rem; color: #ccc; font-size: 0.9rem;">BichoMania</p>
+          </div>
+        </div>
+    </section>
+
+    </section>
+    <!-- Nova seção de contato -->
+    <section class="section" id="contato">
+      <h2>Alavanque suas vendas agora mesmo</h2>
+      <p>Entre em contato conosco e descubra como podemos ajudar a sua empresa a alcançar resultados extraordinários no
+        mundo digital.</p>
+      <a href="https://wa.me/+5551986582387?text=Olá,%20gostaria%20de%20alavancar%20minha%20empresa%20com%20a%20Awenix%20Studio."
+        target="_blank" rel="noopener noreferrer">
+        <button class="btn-primary">Fale com um de nossos especialistas</button>
+      </a>
+    </section>
+  </main>
+  <footer role="contentinfo">
     <p>&copy; 2025 Awenix Studio. Todos os direitos reservados.</p>
   </footer>
 
-  <button class="whatsapp-btn" aria-label="Contato WhatsApp"
+  <button class="whatsapp-btn" aria-label="Contato WhatsApp" rel="noopener noreferrer"
     onclick="window.open('https://wa.me/+5551986582387?text=Ol%C3%A1,%20gostaria%20de%20alavancar%20minha%20empresa%20com%20a%20Awenix%20Studio.', '_blank')">
     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 20" fill="none">
       <path
@@ -336,6 +213,5 @@
   </button>
 </body>
 <script src="./scripts/scripts.js" defer></script>
-<script src="./scripts/teia.js" defer></script>
 
 </html>

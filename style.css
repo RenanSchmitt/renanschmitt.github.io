@@ -264,6 +264,12 @@ nav a:hover {
     width: 240px; /* tamanho base mobile */
     height: auto;
   }
+
+  .hero-graphic,
+  .teia-canvas {
+    display: none;
+  }
+
 }
 
 /* SEÇÕES GERAIS */
