@@ -20,6 +20,7 @@ document.addEventListener('click', (e) => {
   }
 });
 
+if (window.innerWidth > 768) {
 const canvas = document.querySelector('.teia-canvas');
   const ctx = canvas.getContext('2d');
   const section = document.querySelector('.hero-tech');
@@ -112,4 +113,4 @@ const canvas = document.querySelector('.teia-canvas');
   resizeCanvas();
   initPoints();
   animate();
-  
+}
