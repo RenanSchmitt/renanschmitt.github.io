@@ -163,6 +163,7 @@ nav a:hover {
   padding: 7rem 10rem;
   gap: 2rem;
   background: linear-gradient(145deg, #022229, #101010);
+  min-height: 70vh;
 }
 
 .teia-canvas {
@@ -275,7 +276,8 @@ nav a:hover {
   }
 
   .logo {
-    width: 240px; /* tamanho base mobile */
+    width: 240px;
+    /* tamanho base mobile */
     height: auto;
   }
 
@@ -408,7 +410,8 @@ footer {
 
 /* LOGO GENÉRICA */
 .logo {
-  width: 240px; /* tamanho base desktop */
+  width: 240px;
+  /* tamanho base desktop */
   height: auto;
   aspect-ratio: 1 / 1;
 }
