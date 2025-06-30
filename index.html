@@ -192,14 +192,16 @@
 <body>
   <header>
     <img src="./images/header.png" alt="Awenix Studio Logo" />
-    <div class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+      <!-- <div class="menu-toggle" id="menu-toggle" role="button" tabindex="0" aria-label="Abrir menu" aria-expanded="false"> -->
       <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 24 24">
         <path d="M4 6h16M4 12h16M4 18h16" stroke="white" stroke-width="2" stroke-linecap="round" />
       </svg>
       <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 24 24">
         <path d="M6 6l12 12M6 18L18 6" stroke="white" stroke-width="2" stroke-linecap="round" />
       </svg>
-    </div>
+      <!-- </div> -->
+    </button>
     <nav id="nav">
       <a href="#home">Home</a>
       <a href="#servicos">Serviços</a>
@@ -226,11 +228,9 @@
       <img src="./images/pc.svg" alt="Tecnologia e design" />
     </div>
   </section>
-
-
   <section class="section" id="sobre">
-    <h2><img src="./images/logoinv.png" class="logo" alt="Awenix Studio Logo" width="500" height="500"
-        style="width: 15%; height: auto;">
+    <h2><img src="./images/logoinv.png" class="logo" alt="Awenix Studio Logo" width="500" height="500" loading="lazy"
+        decoding="async">
     </h2>
     <p>Somos uma startup focada em inovação e performance. Ajudamos empresas a crescerem de forma estratégica no
       ambiente digital com soluções criativas e personalizadas. Nossa equipe é movida por resultados, agilidade e um
